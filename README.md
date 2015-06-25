@@ -1,19 +1,24 @@
 OKCoin-API
 ==========
 
-OKCoin-API is a NodeJS wrapper over the API of OKCoin, the Chinese Bitcoin exchange
+OKCoin-API is a NodeJS wrapper over the API of OKCoin, supporting Chinese and America Bitcoin exchange
 
 *** Warning : This project is under developement. You may encounter troubles when using this module as OKCoin API is constantly evolving and the english documentation is not always up to date 
 
 Installation
 ```
-npm install okcoin-api --save
+npm install okcoin-api2 --save
 ```
 
 How to use it 
 ```
-var OKCoin = require('okcoin-api');
-var okcoin = new OKCoin(process.env.OKCOIN_PARTNER, process.env.OKCOIN_API_SECRET);
+var OKCoin = require('okcoin-api2');
+var config_obj = {
+	url: 'https://www.okcoin.cn/api',
+	version: 'v1',
+	timeoutMS: 18000
+};
+var okcoin = new OKCoin(process.env.OKCOIN_PARTNER, process.env.OKCOIN_API_SECRET, config_obj);
 ```
 
 Examples

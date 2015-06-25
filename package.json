@@ -1,7 +1,7 @@
 {
-  "name": "okcoin-api",
-  "version": "0.2.2",
-  "description": "NodeJS wrapper over the API of OKCoin, Chinese Bitcoin exchange",
+  "name": "okcoin-api2",
+  "version": "0.1",
+  "description": "NodeJS wrapper over the API of OKCoin, supporting Chinese and America Bitcoin exchange",
   "keywords": [
     "OKCoin",
     "api",
@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/etiennetatur/OKCoin-API"
+    "url": "https://github.com/jackdai123/OKCoin-API"
   },
   "main": "okcoin.js",
-  "author": "Etienne TATUR (https://github.com/etiennetatur)",
+  "author": "jackdai (https://github.com/jackdai123)",
   "contributors": [
   ],
   "license": "MIT",
@@ -36,8 +36,8 @@
     "node": ">=0.10"
   },
   "bugs": {
-    "url": "https://github.com/etiennetatur/OKCoin-API/issues",
-    "email": "etienne.tatur@gmail.com"
+    "url": "https://github.com/jackdai123/OKCoin-API/issues",
+    "email": "david_jlu@foxmail.com"
   },
   "readmeFilename": "README.md"
 }

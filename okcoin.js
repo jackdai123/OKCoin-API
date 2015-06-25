@@ -8,15 +8,15 @@ var md5 = require('MD5');
  * @param {String} api_key    
  * @param {String} secret API Secret
  */
-function OKCoin(api_key, secret) {
+function OKCoin(api_key, secret, config_obj) {
   var self = this;
 
   var config = {
-    url: 'https://www.okcoin.cn/api',
-    version: 'v1',
+    url: config_obj.url || 'https://www.okcoin.cn/api',
+    version: config_obj.version || 'v1',
     api_key: api_key,
     secret: secret,
-    timeoutMS: 18000
+    timeoutMS: config_obj.timeoutMS || 18000
   };
 
   /**
